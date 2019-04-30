@@ -13,32 +13,66 @@ public class HowManyApples implements IHowManyApples {
 
     @Override
     public int areFromArgentina() {
-        return 0;
+        int counter = 0;
+        for (Apple apple : apples) {
+            if(apple.getOrigin() == Origin.Argentina) {
+                counter++;
+            }
+//            apple.getOrigin() == "Argentina";
+        }
+        return counter;
     }
 
     @Override
     public int areRed() {
-        return 0;
+        int counter = 0;
+        for (Apple apple : apples){
+            if (apple.getColor() == Color.Red){
+                counter++;
+            }
+        }
+        return counter;
     }
 
     @Override
     public int howManyAppleFromChinaHeavier110g() {
-        return 0;
+        int counter = 0;
+
+        for (Apple apple : apples) {
+            if (apple.getOrigin() == Origin.China && apple.getWeight() > 110) {
+                counter++;
+            }
+        }
+        return counter;
     }
 
 
     @Override
     public int areFrom(Origin origin) {
-        return 0;
+        int counter = 0;
+        for (Apple apple : apples){
+            if(apple.getOrigin() == origin) {
+                counter++;
+            }
+        }
+        return counter;
     }
 
     @Override
     public int howManyApplesFromHeavier(Origin origin, int weight) {
-        return 0;
+        int counter = 0;
+
+        for (Apple apple : apples) {
+            if(apple.getOrigin() == origin && apple.getWeight() > weight) {
+                counter++;
+            }
+        }
+        return counter;
     }
 
     @Override
     public int howManyApples(Predicate<Apple> applePredicate){
+
         return 0;
     }
 

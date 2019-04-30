@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Function;
 import java.util.function.Predicate;
-
+import co.apples.Apples;
 
 interface Greet {
     int sayHello(String name);
@@ -36,9 +36,9 @@ public class ApplesApp {
 
         Function<String, Boolean> isLongerThanFive = (str) -> str.length() > 5;
 
-        System.out.println(isLongerThanFive.apply("Andre"));
-        System.out.println(isLongerThanFive.apply("Andrew"));
-        System.out.println("------------");
+//        System.out.println(isLongerThanFive.apply("Andre"));
+//        System.out.println(isLongerThanFive.apply("Andrew"));
+//        System.out.println("------------");
 
         List<Apple> listOfRedApples = applesWithColor(apples,
                 (apple) -> apple.getColor() == Color.Red
@@ -46,7 +46,7 @@ public class ApplesApp {
 
 //        List<Apple> listOfYellowApples = applesWithColor(apples, Color.Yellow);
 
-        System.out.println(listOfRedApples.size());
+//        System.out.println(listOfRedApples.size());
 //        System.out.println(listOfYellowApples.size());
 
 //        Greet greet = (name) -> {

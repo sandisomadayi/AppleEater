@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class Apples {
-     private static List<Apple> apples = Arrays.asList(
+     public static List<Apple> apples = Arrays.asList(
             new Apple(Origin.China, Color.Red, 117),
             new Apple(Origin.Chile, Color.Red, 114),
             new Apple(Origin.Argentina, Color.Yellow, 110),
